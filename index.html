@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chat</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="person_selector">
+			<button class="button person_selector_button" id="parth_selector">
+				Parth
+			</button>
+			<button
+				class="button person_selector_button active_person"
+				id="darsh_selector">
+				Darsh
+			</button>
+		</div>
+		<div class="chat_container">
+			<h2 class="chat_header">Darsh Chatting...</h2>
+
+			<div class="chat_messages">
+				<div class="message grey-bg">
+					<div class="message_sender GE">Darsh</div>
+					<div class="message_text GE">Hey</div>
+					<div class="message_time GR">2:00 AM</div>
+				</div>
+				<div class="message green-bg">
+					<div class="message_sender GR">Parth</div>
+					<div class="message_text GR">Hey!!</div>
+					<div class="message_time GE">2:10 AM</div>
+				</div>
+			</div>
+
+			<form class="chat_input_form">
+				<input
+					type="text"
+					class="chat_input"
+					required
+					placeholder="Message Darsh..." />
+				<button class="button send_button">Send</button>
+			</form>
+			<button class="button clear_button">Clear Chat</button>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
